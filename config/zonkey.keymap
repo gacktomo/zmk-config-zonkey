@@ -45,12 +45,12 @@
         };
 
         en {
-            bindings = <&kp INT_MUHENKAN>;
+            bindings = <&kp LANG2>;
             key-positions = <11 12>;
         };
 
         kana {
-            bindings = <&kp INT_KATAKANAHIRAGANA>;
+            bindings = <&kp LANG1>;
             key-positions = <19 20>;
         };
     };
@@ -234,7 +234,7 @@
 &kp N1          &kp NUMBER_2  &kp N3        &kp N4            &kp N5                                     &kp NUMBER_6    &kp N7          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &trans          &trans        &trans        &trans            &trans       &trans                &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans
 &kp LEFT_SHIFT  &trans        &trans        &trans            &trans       &trans                &trans  &trans          &trans          &trans        &trans        &trans
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt 2 INT_MUHENKAN            &kp BACKSPACE   &kp ENTER                                                 &kp DEL
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2            &kp BACKSPACE   &kp ENTER                                                 &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -251,7 +251,7 @@
 &kp EXCL        &kp AT        &kp HASH      &kp DOLLAR        &kp PERCENT                                     &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &moC
 &kp TAB         &trans        &trans        &trans            &trans       &trans                &kp JP_EISU  &trans         &trans         &moD          &moE                  &kp ENTER
 &kp LEFT_SHIFT  &trans        &trans        &trans            &trans       &trans                &trans       &kp JP_KANA    &moF           &moG          &moH                  &kp ENTER
-&mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt 2 INT_MUHENKAN                 &kp BACKSPACE  &kp ENTER                                                     &kp DEL
+&mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2                 &kp BACKSPACE  &kp ENTER                                                     &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -268,7 +268,7 @@
 &kp F1          &kp F2        &kp F3        &kp F4            &kp F5                                     &kp F6          &kp F7          &kp F8        &kp F9     &kp F10
 &kp F11         &kp F12       &trans        &trans            &trans       &trans                &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
 &kp LEFT_SHIFT  &trans        &trans        &trans            &trans       &trans                &trans  &trans          &trans          &trans        &trans     &trans
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt 2 INT_MUHENKAN            &kp BACKSPACE   &kp ENTER                                         &kp DEL
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2            &kp BACKSPACE   &kp ENTER                                         &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -285,7 +285,7 @@
 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                               &kp MINUS        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
 &bt BT_CLR      &bt BT_CLR_ALL  &trans        &trans          &trans        &trans              &trans   &kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK
 &kp LEFT_SHIFT  &trans          &trans        &trans          &trans        &trans              &kp DOT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL
-&kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE     &kp INT_MUHENKAN             &kp BACKSPACE    &kp ENTER                                                        &kp DEL
+&kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &kp LANG1  &kp SPACE     &kp LANG2             &kp BACKSPACE    &kp ENTER                                                        &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -302,7 +302,7 @@
 &trans          &trans        &trans        &trans          &trans                                 &trans         &trans     &trans  &trans  &trans
 &trans          &trans        &trans        &trans          &trans     &trans              &trans  &trans         &trans     &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans        &trans        &trans          &trans     &trans              &trans  &trans         &trans     &trans  &trans  &trans
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE  &kp INT_MUHENKAN            &kp BACKSPACE  &kp ENTER                          &kp DEL
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG1  &kp SPACE  &kp LANG2            &kp BACKSPACE  &kp ENTER                          &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
