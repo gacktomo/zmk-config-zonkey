@@ -225,16 +225,16 @@
 
         layer_1 {
             // -----------------------------------------------------------------------------------------
-            // |  1  |  2  |  3  |  4  |  5  |                     |  6  |  7  |  8  |  9  |   0  |
-            // |      |     |     |     |     |     |           |    |     |     |     |  ↑  |      |
-            // |SHIFT|     |     |     |     |     |           |     |     |     |  ←  |  ↓  |  →  |
-            // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
+            // |     |     |     |     |     |                       |     |     |     |     |     |
+            // |  1  |  2  |  3  |  4  |  5  |     |           |     |  6  |  7  |  8  |  9  |  0  |
+            // |SHIFT|     |     |     |     |     |           |     |     |     |     |     |     |
+            // | CTRL| WIN | ALT |かな |SPACE|英数 |           | BS  | ENT |                   | DEL |
 
             bindings = <
-&kp N1          &kp NUMBER_2  &kp N3        &kp N4            &kp N5                                     &kp NUMBER_6    &kp N7          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&trans          &trans        &trans        &trans            &trans       &trans                &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans
-&kp LEFT_SHIFT  &trans        &trans        &trans            &trans       &trans                &trans  &trans          &trans          &trans        &trans        &trans
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2            &kp BACKSPACE   &kp ENTER                                                 &kp DEL
+&trans          &trans        &trans        &trans       &trans                                            &trans         &trans          &trans          &trans        &trans
+&kp N1          &kp N2        &kp N3        &kp N4       &kp N5       &trans                &trans         &kp N6         &kp N7          &kp N8          &kp N9        &kp N0
+&kp LEFT_SHIFT  &trans        &trans        &trans       &trans       &trans                &trans         &trans         &trans          &trans          &trans        &trans
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2                          &kp BACKSPACE  &kp ENTER                                                    &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -242,16 +242,16 @@
 
         layer_2 {
             // -----------------------------------------------------------------------------------------
-            // |CAPS　| 　　|     |     |                    　　　　　　 |     |     |  -  |  ^  |  ¥  |
-            // | TAB |     |     |     |     |     |              |    |     |     |     |  @  |  [  |
-            // |SHIFT|     |     |     |     |     |           　 | 英数 | かな |    |  ; |  :  |  ]  |
-            // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
+            // |     |     |     |     |     |                       |     |     |     |     |     |
+            // |  !  |  @  |  #  |  $  |  %  |     |           |     |  ^  |  &  |  *  |  (  |  )  |
+            // |SHIFT|     |     |     |     |     |           |     |     |     |     |     |     |
+            // | CTRL| WIN | ALT |かな |SPACE|英数 |           | BS  | ENT |                   | DEL |
 
             bindings = <
-&kp EXCL        &kp AT        &kp HASH      &kp DOLLAR        &kp PERCENT                                     &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &moC
-&kp TAB         &trans        &trans        &trans            &trans       &trans                &kp JP_EISU  &trans         &trans         &moD          &moE                  &kp ENTER
-&kp LEFT_SHIFT  &trans        &trans        &trans            &trans       &trans                &trans       &kp JP_KANA    &moF           &moG          &moH                  &kp ENTER
-&mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2                 &kp BACKSPACE  &kp ENTER                                                     &kp DEL
+&trans          &trans        &trans        &trans       &trans                                            &trans         &trans         &trans        &trans                &trans
+&kp EXCL        &kp AT        &kp HASH      &kp DOLLAR   &kp PERCENT  &trans                &trans         &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LEFT_SHIFT  &trans        &trans        &trans       &trans       &trans                &trans         &trans         &trans         &trans        &trans                &trans
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &lt 1 SPACE  &lt 2 LANG2                          &kp BACKSPACE  &kp ENTER                                                                   &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
