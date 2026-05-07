@@ -194,6 +194,16 @@
             tapping-term-ms = <200>;
         };
 
+        mkp_layer: mkp_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MKP_LAYER";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -309,11 +319,13 @@
         };
 
         layer_6 {
+            // 右手はトラックボール操作専用にし、クリックは左親指で行うことでドラッグ化を防ぐ
+            // 左親指 左→右: MB1 / MB3 (スクロールトリガ) / MB2 (一般的なマウスのボタン並びに合わせる)
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                              &trans  &trans    &trans            &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &mkp MB1  &mkp_layer 5 MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &trans    &trans            &trans    &trans
+&trans  &trans  &trans  &mkp MB1  &mkp_layer 5 MB3  &mkp MB2        &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
